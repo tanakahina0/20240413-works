@@ -51,6 +51,10 @@ ul li {
     background-color: #fff;
 }
 
+li p {
+    text-align: left;
+}
+
 button {
     margin-left: 1rem;
     background-color: transparent;
@@ -110,6 +114,10 @@ button {
     input {
         width: 70vw;
     }
+    li p {
+        text-align: left;
+        width: 28vw;
+    }
 }
 
 @media (max-width: 559px) {
@@ -122,5 +130,9 @@ button {
         width: calc(100% - 15px); /* カリキュレーターの略。()内に計算式を書いてwidthなどを計算する */
         text-align: center;
         background-color: #d5eeff;
+    }
+    li p {
+        text-align: left;
+        width: 58vw;
     }
 }
