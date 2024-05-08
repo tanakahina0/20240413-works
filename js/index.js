@@ -1,8 +1,3 @@
-// js-todo-ttl
-// js-todo-list
-// js-done-list
-// js-register-btn
-
 const todoValue = document.getElementById('js-todo-ttl'); // 入力フォームの取得
 const todoRegister = document.getElementById('js-register-btn'); // 登録するボタンの取得
 const todoList = document.getElementById('js-todo-list'); //未完リストのulタグを取得
