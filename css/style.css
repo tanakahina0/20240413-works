@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* 自分の回答 */
+
+/* h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+.title {
+    background-color: rgb(213, 238, 255);
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: solid 8px rgb(158, 215, 114);
+}
+
+.form {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form input {
+    min-width:  25vw;
+}
+
+.flex-box {
+    display: flex;
+    justify-content:space-around;
+    height: auto;
+}
+
+.flex-box h2 {
+    text-align: center;
+}
+
+.flex-box ul {
+    list-style: none;
+    padding-left: 0px;
+    max-width: 90%; 
+    margin: 0 auto;
+}
+
+.flex-box li {
+    background-color: #fff;
+    height: 3rem;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem 0.4rem 0 1rem;
+}
+
+.box-left {
+    background-color: rgb(213, 238, 255);
+    width: 48%;
+    padding: 0.4rem;
+}
+
+.box-right {
+    background-color: rgb(213, 238, 255);
+    width: 48%;
+    padding: 0.4rem;
+} */
+
+
+
+/* 模範解答 */
+
+/* サルワカ・Font-Familyメーカーでfont-familyの選択が簡単にできる */
+* {
+    font-size: 12px;
+    font-family: 'メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+/* rem→基準となる値を1remとする。今回は、12pxを基準に2remを設定しているので、24pxとなる。 */
+h1 {
+    padding: 5px 10px;
+    font-size: 2rem;
+    background-color: #d5eeff;
+    border-left: solid 5px #ffe0eb;
+}
+
+.register_box {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+.output-flex {
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* > すぐ下にある子要素を対象とする。今回はtodo-box,done-boxが対象 */
+.output-flex > div {
+    margin:  0 10px;
+    width: calc(50% - 30px); /* カリキュレーターの略。()内に計算式を書いてwidthなどを計算する */
+    text-align: center;
+    background-color: #d5eeff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5%;
+    padding: 2.5%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+button {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+#js-register-btn {
+    border: 1px solid gray;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+}
+
+#js-done-btn,#js-del-btn {
+    border: 1px solid gray;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+}
+
+#js-color-btn {
+    background-color: #fff;
+    border: 1px solid #ff7aa8;
+    color: #4d1428;
+    border-radius: 5px;
+}
+
+@media (max-width: 1071px) {
+    ul li {
+        margin-bottom: 5%;
+        padding: 2.5%;
+        display: block;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        list-style-type: none;
+        background-color: #fff;
+    }
+    button {
+        margin-left: 1rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        display: block;
+        margin: 1rem;
+    }
+    .register_box button {
+        align-items: center;
+        display: block;
+        margin: 1rem auto;
+
+    }
+    input {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 559px) {
+    .output-flex {
+        margin: 20px auto;
+        display: block;
+    }
+    .output-flex > div {
+        margin:  0 10px;
+        width: calc(100% - 15px); /* カリキュレーターの略。()内に計算式を書いてwidthなどを計算する */
+        text-align: center;
+        background-color: #d5eeff;
+    }
+}
